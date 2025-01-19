@@ -875,8 +875,8 @@ def fit_EV_models(df, tr_min = 5, ws = 1, GEV_how = 'lmom', MEV_how = 'pwm',
     XI_val       = XI[tr_mask]
     Fi_val       = Fi[tr_mask]
 
-    #x0           = np.mean(XI_val) - 0.2*np.std(XI_val)
-    x0 = 50.0
+    x0           = np.mean(XI_val) - 0.2*np.std(XI_val)
+    #x0 = 50.0
 
     if declu:
         # decluster time series, and subs. it in the original data frame.
